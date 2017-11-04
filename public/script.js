@@ -318,7 +318,7 @@ function displayCard(x) {
     console.log(x.rowIndex - 2);
 
     var image = document.getElementById("img-one");
-    image.innerHTML = '<img src="' + invoices[x.rowIndex - 2].image + '" id="img-width">';
+    image.innerHTML = '<img src="Images/' + invoices[x.rowIndex - 2].image + '" id="img-width">';
 
     var account = document.getElementById("accountName");
     account.innerHTML = invoices[x.rowIndex - 2].id + " - " + invoices[x.rowIndex - 2].name;
