@@ -1,0 +1,152 @@
+
+#table {
+    table-layout: auto;
+    border-collapse: collapse;
+    width: 50vw;
+    float: left;
+    margin-right: 4vw;
+    margin-left: 4vw;
+}
+
+.arrow {
+    width: 0.8em;
+    padding-left: 1vw;
+}
+
+#numberUpArrow {
+    display: none;
+}
+
+#numberDownArrow {
+    display: inline;
+}
+
+td, th{
+    text-align: left;
+    padding: 10px 20px 10px 30px;
+    border: 0.5px solid rgb(240,240,240);
+    font-size: 0.7em;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+h2 {
+    color: #2c79f7;
+    padding-left: 6.3vw;
+    float: left;
+    width: 50vw;
+    font-weight: 500;
+    
+}
+
+#image {
+    display: inline-block;
+    width: 40vw;
+    margin-top: 0px;
+    position: relative;
+}
+
+#invoices {
+    width: auto;
+    height: auto;
+    position: absolute;
+    background-color: white;
+    z-index: 9999;
+    top: 15vw;
+    display: none;
+    padding-bottom: 30px;
+    right: 3vw;
+    left: 3vw;
+    
+}
+
+#accountName {
+    font-size: 1.5vw;
+    color: #2c79f7;
+    padding-left: 30px;
+    font-weight: 500;
+}
+
+.cardTitle {
+    font-weight: 500;
+}
+
+#accountDownArrow {
+    display: inline;
+}
+
+#accountUpArrow {
+    display: none;
+}
+
+#typeDownArrow {
+    display: inline;
+}
+
+#typeUpArrow {
+    display: none;
+}
+
+#statusDownArrow {
+    display: inline;
+}
+
+#statusUpArrow {
+    display: none;
+}
+
+#currencyDownArrow {
+    display: inline;
+}
+
+#currencyUpArrow {
+    display: none;
+}
+
+
+
+.cardRow {
+    border: none;
+    padding: 0px 30px 5px 30px;
+    font-size: 0.9vw;
+}
+
+#invoice-bg {
+    background-image: url(bg.png);
+    background-size: auto 100%;
+    width: 35vw;
+    height: 56vw;
+    float: left;
+    position: relative;
+    margin-top: -4vw;
+}
+
+
+#img-width {
+    width: 100%;
+}
+
+.cardRowHeader {
+    border: none;
+    font-size: 0.7vw;
+}
+
+#close {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    width: 3vw;
+    bottom: 7vw;
+    display: none;
+    filter: invert();
+    left: 50%; 
+    transform: translate(-50%,0)
+}
+
+#tableHeader {
+    font-size: 1vw;
+}

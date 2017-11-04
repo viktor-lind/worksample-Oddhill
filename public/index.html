@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="stylesheet.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+    </head>
+    <body>
+        <div class="wrapper">
+        <h2>All invoices - 2017</h2>
+        <table id="table">
+            <tr>
+                <th colspan="5" id="tableHeader">Invoices</th>
+            </tr>
+            
+            <tr>
+                
+                <th>Type<img class="arrow" id="typeDownArrow" src="down.png" alt="down-arrow" onclick="sortByType()"> <img class="arrow" id="typeUpArrow" src="up.png" alt="up-arrow" onclick="sortByType()"> </th>
+                <th>Account Name<img class="arrow" id="accountDownArrow" src="down.png" alt="down-arrow" onclick="sortByName()"> <img class="arrow" id="accountUpArrow" src="up.png" alt="up-arrow" onclick="sortByName()"></th>
+                <th>Status<img class="arrow" id="statusDownArrow" src="down.png" alt="down-arrow" onclick="sortByStatus()"> <img class="arrow" id="statusUpArrow" src="up.png" alt="up-arrow" onclick="sortByStatus()"></th>
+                <th>Currency<img class="arrow" id="currencyDownArrow" src="down.png" alt="down-arrow" onclick="sortByCurrency()"> <img class="arrow" id="currencyUpArrow" src="up.png" alt="up-arrow" onclick="sortByCurrency()"></th>
+                <th>Balance<img class="arrow" id="numberDownArrow" src="down.png" alt="down-arrow" onclick="sortByNumber()"> <img class="arrow" id="numberUpArrow" src="up.png" alt="up-arrow" onclick="sortByNumber()"></th>
+            </tr>
+            
+        
+        </table>
+           <div id="invoice-bg">
+               
+            <div id="invoices">
+                <div id="img-one"></div>
+                
+                <p id="accountName"></p>
+                <table id="cardTable">
+                    <tr>
+                        <th class="cardRowHeader">TYPE</th>
+                        <th class="cardRowHeader">ACCOUNT NAME</th>
+                    </tr>
+                    <tr>
+                        <td class="cardRow" id="typeName"></td>
+                        <td class="cardRow" id="accountNameS"></td>
+                    </tr>
+                    <tr>
+                        <th class="cardRowHeader">STATUS</th>
+                        <th class="cardRowHeader">CURRENCY</th>
+                    </tr>
+                    <tr>
+                        <td class="cardRow" id="statusName"></td>
+                        <td class="cardRow" id="currencyName"></td>
+                    </tr>
+                    <tr>
+                        <th class="cardRowHeader">BALANCE</th>
+                        <th class="cardRowHeader">NOTES</th>
+                    </tr>
+                    <tr>
+                        <td class="cardRow" id="balanceName"></td> 
+                        <td class="cardRow" id="notes"></td>
+                    </tr>
+                
+                </table>
+           
+            </div>
+                
+               <img id="close" src="close.png" alt="close" onclick="closeCard()">
+               </div>
+        </div>
+        <script src="script.js" type="text/javascript"></script>
+    </body>
+
+</html>
